@@ -19,6 +19,8 @@
 		B8030CDD27D0E7300013AD34 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8030CDC27D0E7300013AD34 /* Alamofire */; };
 		B8030CE027D0E7AD0013AD34 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B8030CDF27D0E7AD0013AD34 /* Kingfisher */; };
 		B8030CE327D0E8B00013AD34 /* RequestResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CE227D0E8B00013AD34 /* RequestResponseModels.swift */; };
+		B8030CE627D0E99A0013AD34 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CE527D0E99A0013AD34 /* Requester.swift */; };
+		B8030CE827D0EA080013AD34 /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CE727D0EA080013AD34 /* Contracts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B8030CCC27D0E4B20013AD34 /* TheNewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNewsAppUITests.swift; sourceTree = "<group>"; };
 		B8030CCE27D0E4B20013AD34 /* TheNewsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNewsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8030CE227D0E8B00013AD34 /* RequestResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponseModels.swift; sourceTree = "<group>"; };
+		B8030CE527D0E99A0013AD34 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		B8030CE727D0EA080013AD34 /* Contracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		B8030CAA27D0E4B10013AD34 /* TheNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				B8030CE427D0E9770013AD34 /* Network */,
 				B8030CE127D0E88F0013AD34 /* Model */,
 				B8030CAB27D0E4B10013AD34 /* AppDelegate.swift */,
 				B8030CAD27D0E4B10013AD34 /* SceneDelegate.swift */,
@@ -140,6 +145,15 @@
 				B8030CE227D0E8B00013AD34 /* RequestResponseModels.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B8030CE427D0E9770013AD34 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B8030CE527D0E99A0013AD34 /* Requester.swift */,
+				B8030CE727D0EA080013AD34 /* Contracts.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +298,9 @@
 				B8030CB027D0E4B10013AD34 /* ViewController.swift in Sources */,
 				B8030CAC27D0E4B10013AD34 /* AppDelegate.swift in Sources */,
 				B8030CE327D0E8B00013AD34 /* RequestResponseModels.swift in Sources */,
+				B8030CE627D0E99A0013AD34 /* Requester.swift in Sources */,
 				B8030CAE27D0E4B10013AD34 /* SceneDelegate.swift in Sources */,
+				B8030CE827D0EA080013AD34 /* Contracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
