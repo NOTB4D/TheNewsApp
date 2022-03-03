@@ -34,19 +34,15 @@ class Requester: ProviderProtocol {
                 } catch let error as NSError {
                     completion(.fail(error))
                 }
-            case .failure (let error):
+            case .failure(let error):
                 completion(.fail(error))
             }
         }
     }
-    private func prepareUrl(params: [String:String]) -> String {
+    private func prepareUrl(params: [String: String]) -> String {
         var resultUrl = baseUrl
-        params.forEach {
-            resultUrl += "\($0.key)=\($0.value)& "
-        }
+        params.forEach { resultUrl += "\($0.key)=\($0.value)&" }
         resultUrl.removeLast()
         return resultUrl
     }
-    
-    
 }

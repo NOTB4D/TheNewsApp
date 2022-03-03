@@ -12,3 +12,4 @@ protocol ProviderProtocol {
                                parameters:[String: String],
                                        completion: @escaping (NetworkResponse<T>)-> Void  )
 }
+
