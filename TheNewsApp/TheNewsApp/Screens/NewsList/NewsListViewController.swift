@@ -10,20 +10,17 @@ import CoreAudio
 
 class NewsListViewController: UIViewController, NewsListViewProtocol {
 
-    @IBOutlet weak var NewsListTableView: UITableView!{
-        didSet{
-            NewsListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "identifier")
-        }
-    }
+    @IBOutlet weak var NewsListTableView: UITableView!
     
 
     var interactor : NewsListInteractorProtocol?
     
     var viewModel: News.Fetch.ViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         interactor?.viewDidLoad()
+        NewsListTableView.registerNib(NewsTableViewCell.self, bundle: .main)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,11 +47,11 @@ extension NewsListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "identifier", for: indexPath)
+        let cell = tableView.dequeueCell(type: NewsTableViewCell.self, indexPath: indexPath)
         guard let model = self.viewModel?.news[indexPath.row]  else {
             return UITableViewCell()
         }
-        cell.textLabel?.text = model.title
+        cell.configure(viewModel: model)
         return cell
     }
 }

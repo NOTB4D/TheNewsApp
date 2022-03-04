@@ -32,6 +32,9 @@
 		B8030CFE27D142A20013AD34 /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CFD27D142A20013AD34 /* NewsListPresenter.swift */; };
 		B8030D0027D14C970013AD34 /* NewsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8030CFF27D14C970013AD34 /* NewsList.storyboard */; };
 		B8030D0227D14D3F0013AD34 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D0127D14D3F0013AD34 /* NewsListViewController.swift */; };
+		B8030D0627D15EF40013AD34 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D0427D15EF40013AD34 /* NewsTableViewCell.swift */; };
+		B8030D0727D15EF40013AD34 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8030D0527D15EF40013AD34 /* NewsTableViewCell.xib */; };
+		B8030D0A27D168E10013AD34 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B8030D0927D168E10013AD34 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,8 @@
 		B8030CFD27D142A20013AD34 /* NewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenter.swift; sourceTree = "<group>"; };
 		B8030CFF27D14C970013AD34 /* NewsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsList.storyboard; sourceTree = "<group>"; };
 		B8030D0127D14D3F0013AD34 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		B8030D0427D15EF40013AD34 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		B8030D0527D15EF40013AD34 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8030D0A27D168E10013AD34 /* SDWebImage in Frameworks */,
 				B8030CE027D0E7AD0013AD34 /* Kingfisher in Frameworks */,
 				B8030CDD27D0E7300013AD34 /* Alamofire in Frameworks */,
 			);
@@ -201,6 +207,7 @@
 		B8030CEB27D0F9570013AD34 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
+				B8030D0327D15E8E0013AD34 /* Cell */,
 				B8030CEC27D0F9770013AD34 /* NewsListBuilder.swift */,
 				B8030CF727D102490013AD34 /* NewsListContracts.swift */,
 				B8030CFF27D14C970013AD34 /* NewsList.storyboard */,
@@ -219,6 +226,15 @@
 				B8030CF527D100370013AD34 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B8030D0327D15E8E0013AD34 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B8030D0427D15EF40013AD34 /* NewsTableViewCell.swift */,
+				B8030D0527D15EF40013AD34 /* NewsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +256,7 @@
 			packageProductDependencies = (
 				B8030CDC27D0E7300013AD34 /* Alamofire */,
 				B8030CDF27D0E7AD0013AD34 /* Kingfisher */,
+				B8030D0927D168E10013AD34 /* SDWebImage */,
 			);
 			productName = TheNewsApp;
 			productReference = B8030CA827D0E4B10013AD34 /* TheNewsApp.app */;
@@ -316,6 +333,7 @@
 			packageReferences = (
 				B8030CDB27D0E7300013AD34 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				B8030CDE27D0E7AD0013AD34 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B8030D0827D168E10013AD34 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = B8030CA927D0E4B10013AD34 /* Products */;
 			projectDirPath = "";
@@ -337,6 +355,7 @@
 				B8030CB527D0E4B20013AD34 /* Assets.xcassets in Resources */,
 				B8030CB327D0E4B10013AD34 /* Main.storyboard in Resources */,
 				B8030D0027D14C970013AD34 /* NewsList.storyboard in Resources */,
+				B8030D0727D15EF40013AD34 /* NewsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +394,7 @@
 				B8030CFE27D142A20013AD34 /* NewsListPresenter.swift in Sources */,
 				B8030CFA27D13D6D0013AD34 /* NewsListInteractor.swift in Sources */,
 				B8030CF627D100370013AD34 /* Extensions.swift in Sources */,
+				B8030D0627D15EF40013AD34 /* NewsTableViewCell.swift in Sources */,
 				B8030CE827D0EA080013AD34 /* Contracts.swift in Sources */,
 				B8030D0227D14D3F0013AD34 /* NewsListViewController.swift in Sources */,
 			);
@@ -730,6 +750,14 @@
 				kind = branch;
 			};
 		};
+		B8030D0827D168E10013AD34 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -742,6 +770,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B8030CDE27D0E7AD0013AD34 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		B8030D0927D168E10013AD34 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8030D0827D168E10013AD34 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
