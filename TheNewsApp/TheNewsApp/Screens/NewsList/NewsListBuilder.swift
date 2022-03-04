@@ -14,14 +14,14 @@ class NewsListBuilder {
         let viewController = storyboard.instantiateViewController(withIdentifier: "NewsList") as! NewsListViewController
         let interactor = NewsListInteractor(worker: Networker())
         let presenter = NewsListPresenter()
-       // let router = NewsListRouter()
+        let router = NewsListRouter()
         
         viewController.interactor = interactor
-       // viewController.router = router
+        viewController.router = router
         interactor.presenter = presenter
         presenter.viewController = viewController
-       // router.viewController = viewController
-       // router.dataStore = interactor
+        router.viewController = viewController
+        router.dataStore = interactor
         
         return viewController
     }

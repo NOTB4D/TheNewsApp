@@ -14,7 +14,7 @@ class NewsListViewController: UIViewController, NewsListViewProtocol {
     
 
     var interactor : NewsListInteractorProtocol?
-    
+    var router : NewsListRoutingProtocol?
     var viewModel: News.Fetch.ViewModel?
     
     override func viewDidLoad() {
@@ -53,6 +53,14 @@ extension NewsListViewController: UITableViewDataSource {
         }
         cell.configure(viewModel: model)
         return cell
+    }
+}
+
+extension NewsListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router?.navigate(to: .showNewsDetail(index: indexPath.row))
+        NewsListTableView.deselectRow(at: indexPath, animated: true)
+
     }
 }
 

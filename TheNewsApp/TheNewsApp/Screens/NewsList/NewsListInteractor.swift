@@ -8,11 +8,13 @@
 import Foundation
 import Alamofire
 
-class NewsListInteractor: NewsListInteractorProtocol, NewsDataStore{
+class NewsListInteractor: NewsListInteractorProtocol, NewsListDataStoreProcotol{
+    var dataStore: [Article]?
+    
     
     var presenter: NewsListPresenterProtocol?
     var worker: NewsWorkingLogic
-    var news :[Article]?
+
     
     init(worker: NewsWorkingLogic) {
         self.worker = worker
@@ -27,8 +29,8 @@ class NewsListInteractor: NewsListInteractorProtocol, NewsDataStore{
             guard let self = self else { return }
             switch result {
             case .success(let response):
-                self.news = response.articles
-                guard let news = self.news else { return }
+                self.dataStore = response.articles
+                guard let news = self.dataStore else { return }
                 self.presenter?.handeOutput(.showData(News.Fetch.Response(news: news)))
             case .failure(_):
                 self.presenter?.handeOutput(.showEmptyData)

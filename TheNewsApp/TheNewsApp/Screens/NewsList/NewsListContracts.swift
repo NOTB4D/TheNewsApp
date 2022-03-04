@@ -6,13 +6,13 @@
 //
 
 import Foundation
+
+typealias NewsListRouterProtocol = NewsListRoutingProtocol & NewsListDataPassingProtocol
+
 //MARK: NetworkWorker
 protocol NewsWorkingLogic: AnyObject {
     func getNews(request: NewsList.Request, completion: @escaping ((Result<NewsList, Error>) -> Void))
 }
-
-
-
 // MARK: INTERACTOR
 protocol NewsListInteractorProtocol {
     func viewDidLoad()
@@ -22,10 +22,6 @@ enum NewsListInteractorOutput {
     case showData(News.Fetch.Response)
     case showEmptyData
     
-}
-
-protocol NewsDataStore: AnyObject {
-    var news: [Article]? { get }
 }
 
 // MARK: Presenter
@@ -49,4 +45,15 @@ protocol NewsListRoutingProtocol   {
 
 enum NewsListRoute {
     case showNewsDetail(index: Int)
+}
+
+//MARK: DATA
+
+
+protocol NewsListDataStoreProcotol:AnyObject {
+    var dataStore: [Article]? { get set}
+}
+
+protocol NewsListDataPassingProtocol {
+    var  dataStore: NewsListDataStoreProcotol? {get}
 }

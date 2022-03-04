@@ -17,7 +17,6 @@
 		B8030CCD27D0E4B20013AD34 /* TheNewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CCC27D0E4B20013AD34 /* TheNewsAppUITests.swift */; };
 		B8030CCF27D0E4B20013AD34 /* TheNewsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CCE27D0E4B20013AD34 /* TheNewsAppUITestsLaunchTests.swift */; };
 		B8030CDD27D0E7300013AD34 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8030CDC27D0E7300013AD34 /* Alamofire */; };
-		B8030CE027D0E7AD0013AD34 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B8030CDF27D0E7AD0013AD34 /* Kingfisher */; };
 		B8030CE327D0E8B00013AD34 /* RequestResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CE227D0E8B00013AD34 /* RequestResponseModels.swift */; };
 		B8030CE627D0E99A0013AD34 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CE527D0E99A0013AD34 /* Requester.swift */; };
 		B8030CE827D0EA080013AD34 /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030CE727D0EA080013AD34 /* Contracts.swift */; };
@@ -35,6 +34,15 @@
 		B8030D0627D15EF40013AD34 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D0427D15EF40013AD34 /* NewsTableViewCell.swift */; };
 		B8030D0727D15EF40013AD34 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8030D0527D15EF40013AD34 /* NewsTableViewCell.xib */; };
 		B8030D0A27D168E10013AD34 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B8030D0927D168E10013AD34 /* SDWebImage */; };
+		B8030D0C27D1F0870013AD34 /* NewsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D0B27D1F0870013AD34 /* NewsListRouter.swift */; };
+		B8030D0F27D1F5270013AD34 /* NewsDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D0E27D1F5270013AD34 /* NewsDetailBuilder.swift */; };
+		B8030D1127D1F6780013AD34 /* NewsDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1027D1F6780013AD34 /* NewsDetailContracts.swift */; };
+		B8030D1327D1F7710013AD34 /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1227D1F7710013AD34 /* NewsDetailModel.swift */; };
+		B8030D1527D1FB250013AD34 /* NewsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1427D1FB250013AD34 /* NewsDetailInteractor.swift */; };
+		B8030D1727D1FCBB0013AD34 /* NewsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1627D1FCBB0013AD34 /* NewsDetailPresenter.swift */; };
+		B8030D1927D1FFBE0013AD34 /* NewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8030D1827D1FFBE0013AD34 /* NewsDetail.storyboard */; };
+		B8030D1B27D201DF0013AD34 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1A27D201DF0013AD34 /* NewsDetailViewController.swift */; };
+		B8030D1D27D205630013AD34 /* NewsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1C27D205630013AD34 /* NewsDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +92,15 @@
 		B8030D0127D14D3F0013AD34 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		B8030D0427D15EF40013AD34 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		B8030D0527D15EF40013AD34 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		B8030D0B27D1F0870013AD34 /* NewsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRouter.swift; sourceTree = "<group>"; };
+		B8030D0E27D1F5270013AD34 /* NewsDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailBuilder.swift; sourceTree = "<group>"; };
+		B8030D1027D1F6780013AD34 /* NewsDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailContracts.swift; sourceTree = "<group>"; };
+		B8030D1227D1F7710013AD34 /* NewsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
+		B8030D1427D1FB250013AD34 /* NewsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailInteractor.swift; sourceTree = "<group>"; };
+		B8030D1627D1FCBB0013AD34 /* NewsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailPresenter.swift; sourceTree = "<group>"; };
+		B8030D1827D1FFBE0013AD34 /* NewsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsDetail.storyboard; sourceTree = "<group>"; };
+		B8030D1A27D201DF0013AD34 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		B8030D1C27D205630013AD34 /* NewsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +109,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8030D0A27D168E10013AD34 /* SDWebImage in Frameworks */,
-				B8030CE027D0E7AD0013AD34 /* Kingfisher in Frameworks */,
 				B8030CDD27D0E7300013AD34 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +215,7 @@
 		B8030CEA27D0F94C0013AD34 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B8030D0D27D1F4FA0013AD34 /* NewsDetail */,
 				B8030CEB27D0F9570013AD34 /* NewsList */,
 			);
 			path = Screens;
@@ -216,6 +233,7 @@
 				B8030CFD27D142A20013AD34 /* NewsListPresenter.swift */,
 				B8030CFB27D13DCD0013AD34 /* NewsModel.swift */,
 				B8030CF227D0FF3A0013AD34 /* NewWorker.swift */,
+				B8030D0B27D1F0870013AD34 /* NewsListRouter.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -237,6 +255,21 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		B8030D0D27D1F4FA0013AD34 /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B8030D0E27D1F5270013AD34 /* NewsDetailBuilder.swift */,
+				B8030D1027D1F6780013AD34 /* NewsDetailContracts.swift */,
+				B8030D1A27D201DF0013AD34 /* NewsDetailViewController.swift */,
+				B8030D1227D1F7710013AD34 /* NewsDetailModel.swift */,
+				B8030D1427D1FB250013AD34 /* NewsDetailInteractor.swift */,
+				B8030D1627D1FCBB0013AD34 /* NewsDetailPresenter.swift */,
+				B8030D1827D1FFBE0013AD34 /* NewsDetail.storyboard */,
+				B8030D1C27D205630013AD34 /* NewsDetailRouter.swift */,
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,7 +288,6 @@
 			name = TheNewsApp;
 			packageProductDependencies = (
 				B8030CDC27D0E7300013AD34 /* Alamofire */,
-				B8030CDF27D0E7AD0013AD34 /* Kingfisher */,
 				B8030D0927D168E10013AD34 /* SDWebImage */,
 			);
 			productName = TheNewsApp;
@@ -332,7 +364,6 @@
 			mainGroup = B8030C9F27D0E4B10013AD34;
 			packageReferences = (
 				B8030CDB27D0E7300013AD34 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				B8030CDE27D0E7AD0013AD34 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				B8030D0827D168E10013AD34 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = B8030CA927D0E4B10013AD34 /* Products */;
@@ -351,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8030D1927D1FFBE0013AD34 /* NewsDetail.storyboard in Resources */,
 				B8030CB827D0E4B20013AD34 /* LaunchScreen.storyboard in Resources */,
 				B8030CB527D0E4B20013AD34 /* Assets.xcassets in Resources */,
 				B8030CB327D0E4B10013AD34 /* Main.storyboard in Resources */,
@@ -380,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8030D1B27D201DF0013AD34 /* NewsDetailViewController.swift in Sources */,
 				B8030CFC27D13DCD0013AD34 /* NewsModel.swift in Sources */,
 				B8030CF327D0FF3A0013AD34 /* NewWorker.swift in Sources */,
 				B8030CB027D0E4B10013AD34 /* ViewController.swift in Sources */,
@@ -388,13 +421,20 @@
 				B8030CAC27D0E4B10013AD34 /* AppDelegate.swift in Sources */,
 				B8030CE327D0E8B00013AD34 /* RequestResponseModels.swift in Sources */,
 				B8030CF127D0FDAE0013AD34 /* AppRouter.swift in Sources */,
+				B8030D1D27D205630013AD34 /* NewsDetailRouter.swift in Sources */,
 				B8030CE627D0E99A0013AD34 /* Requester.swift in Sources */,
+				B8030D1727D1FCBB0013AD34 /* NewsDetailPresenter.swift in Sources */,
 				B8030CF827D102490013AD34 /* NewsListContracts.swift in Sources */,
 				B8030CAE27D0E4B10013AD34 /* SceneDelegate.swift in Sources */,
 				B8030CFE27D142A20013AD34 /* NewsListPresenter.swift in Sources */,
 				B8030CFA27D13D6D0013AD34 /* NewsListInteractor.swift in Sources */,
 				B8030CF627D100370013AD34 /* Extensions.swift in Sources */,
+				B8030D0F27D1F5270013AD34 /* NewsDetailBuilder.swift in Sources */,
 				B8030D0627D15EF40013AD34 /* NewsTableViewCell.swift in Sources */,
+				B8030D1327D1F7710013AD34 /* NewsDetailModel.swift in Sources */,
+				B8030D0C27D1F0870013AD34 /* NewsListRouter.swift in Sources */,
+				B8030D1527D1FB250013AD34 /* NewsDetailInteractor.swift in Sources */,
+				B8030D1127D1F6780013AD34 /* NewsDetailContracts.swift in Sources */,
 				B8030CE827D0EA080013AD34 /* Contracts.swift in Sources */,
 				B8030D0227D14D3F0013AD34 /* NewsListViewController.swift in Sources */,
 			);
@@ -742,14 +782,6 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		B8030CDE27D0E7AD0013AD34 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		B8030D0827D168E10013AD34 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -765,11 +797,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B8030CDB27D0E7300013AD34 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		B8030CDF27D0E7AD0013AD34 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B8030CDE27D0E7AD0013AD34 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 		B8030D0927D168E10013AD34 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
