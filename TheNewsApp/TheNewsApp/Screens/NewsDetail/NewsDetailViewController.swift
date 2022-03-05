@@ -12,7 +12,7 @@ class NewsDetailViewController: UIViewController, NewsDetailViewProtocol {
 
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var labelDate: UILabel!
-    @IBOutlet weak var labalNews: UILabel!
+    @IBOutlet weak var labelNewsDetail: UITextView!
     
     var interactor: NewsDetailInteractorProtocol?
     var router: NewsDetailRouterProtocol?
@@ -30,7 +30,7 @@ class NewsDetailViewController: UIViewController, NewsDetailViewProtocol {
         switch output {
         case .showNews(let viewModel):
             self.labelDate.text = viewModel.publishDate
-            self.labalNews.text = viewModel.detailDescription
+            self.labelNewsDetail.text = viewModel.detailDescription
             self.image.sd_setImage(with: URL(string: viewModel.image))
         }
     }

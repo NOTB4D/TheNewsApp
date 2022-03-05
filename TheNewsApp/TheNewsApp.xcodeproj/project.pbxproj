@@ -43,6 +43,7 @@
 		B8030D1927D1FFBE0013AD34 /* NewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8030D1827D1FFBE0013AD34 /* NewsDetail.storyboard */; };
 		B8030D1B27D201DF0013AD34 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1A27D201DF0013AD34 /* NewsDetailViewController.swift */; };
 		B8030D1D27D205630013AD34 /* NewsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1C27D205630013AD34 /* NewsDetailRouter.swift */; };
+		B8030D1F27D281870013AD34 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1E27D281870013AD34 /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		B8030D1827D1FFBE0013AD34 /* NewsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsDetail.storyboard; sourceTree = "<group>"; };
 		B8030D1A27D201DF0013AD34 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		B8030D1C27D205630013AD34 /* NewsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailRouter.swift; sourceTree = "<group>"; };
+		B8030D1E27D281870013AD34 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				B8030CF527D100370013AD34 /* Extensions.swift */,
+				B8030D1E27D281870013AD34 /* Date+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				B8030CE627D0E99A0013AD34 /* Requester.swift in Sources */,
 				B8030D1727D1FCBB0013AD34 /* NewsDetailPresenter.swift in Sources */,
 				B8030CF827D102490013AD34 /* NewsListContracts.swift in Sources */,
+				B8030D1F27D281870013AD34 /* Date+.swift in Sources */,
 				B8030CAE27D0E4B10013AD34 /* SceneDelegate.swift in Sources */,
 				B8030CFE27D142A20013AD34 /* NewsListPresenter.swift in Sources */,
 				B8030CFA27D13D6D0013AD34 /* NewsListInteractor.swift in Sources */,
