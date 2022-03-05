@@ -16,16 +16,24 @@ class NewsListViewController: UIViewController, NewsListViewProtocol {
     var interactor : NewsListInteractorProtocol?
     var router : NewsListRoutingProtocol?
     var viewModel: News.Fetch.ViewModel?
+    var refreshControl: UIRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         interactor?.viewDidLoad()
         NewsListTableView.registerNib(NewsTableViewCell.self, bundle: .main)
+        
+        refreshControl.addTarget(self, action: #selector(NewsListViewController.refresh), for: UIControl.Event.valueChanged)
+        
+        NewsListTableView.refreshControl = refreshControl
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.isNavigationBarHidden = true
+    }
+    @objc func refresh(){
+        interactor?.viewDidLoad()
     }
 
     func handleOutput(_ output: NewsListPresenterOutput) {
@@ -34,6 +42,7 @@ class NewsListViewController: UIViewController, NewsListViewProtocol {
             self.viewModel = news
             DispatchQueue.main.async {
                 self.NewsListTableView.reloadData()
+                self.refreshControl.endRefreshing()
             }
         case .showEmptyList:
             break
