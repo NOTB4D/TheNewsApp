@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ViewAnimator
 import SDWebImage
 
 class NewsDetailViewController: UIViewController, NewsDetailViewProtocol {
@@ -24,6 +25,7 @@ class NewsDetailViewController: UIViewController, NewsDetailViewProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
+        self.image.animate(animations: [AnimationType.zoom(scale: 4)], duration: 2)
     }
     
     func handleOutput(_ output: NewsDetailPresenterOutput) {
