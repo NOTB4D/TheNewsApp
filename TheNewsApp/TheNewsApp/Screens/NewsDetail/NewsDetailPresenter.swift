@@ -17,7 +17,7 @@ class NewsDetailPresenter: NewsDetailPresenterProtocol {
             viewController?.handleOutput(.showNews(viewModel: NewsDetail.Fetch.ViewModel(
                 image: response.new?.urlToImage ?? "",
                 title: response.new?.title ?? "",
-                detailDescription: response.new?.articleDescription ?? "",
+                detailDescription: response.new?.content ?? "",
                 publishDate: response.new?.publishedAt ?? ""
             )))
         }

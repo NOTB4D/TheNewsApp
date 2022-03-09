@@ -44,6 +44,7 @@
 		B8030D1B27D201DF0013AD34 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1A27D201DF0013AD34 /* NewsDetailViewController.swift */; };
 		B8030D1D27D205630013AD34 /* NewsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1C27D205630013AD34 /* NewsDetailRouter.swift */; };
 		B8030D1F27D281870013AD34 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8030D1E27D281870013AD34 /* Date+.swift */; };
+		B8030D2227D87C870013AD34 /* ViewAnimator in Frameworks */ = {isa = PBXBuildFile; productRef = B8030D2127D87C870013AD34 /* ViewAnimator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 			files = (
 				B8030D0A27D168E10013AD34 /* SDWebImage in Frameworks */,
 				B8030CDD27D0E7300013AD34 /* Alamofire in Frameworks */,
+				B8030D2227D87C870013AD34 /* ViewAnimator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +294,7 @@
 			packageProductDependencies = (
 				B8030CDC27D0E7300013AD34 /* Alamofire */,
 				B8030D0927D168E10013AD34 /* SDWebImage */,
+				B8030D2127D87C870013AD34 /* ViewAnimator */,
 			);
 			productName = TheNewsApp;
 			productReference = B8030CA827D0E4B10013AD34 /* TheNewsApp.app */;
@@ -368,6 +371,7 @@
 			packageReferences = (
 				B8030CDB27D0E7300013AD34 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				B8030D0827D168E10013AD34 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				B8030D2027D87C870013AD34 /* XCRemoteSwiftPackageReference "ViewAnimator" */,
 			);
 			productRefGroup = B8030CA927D0E4B10013AD34 /* Products */;
 			projectDirPath = "";
@@ -794,6 +798,14 @@
 				kind = branch;
 			};
 		};
+		B8030D2027D87C870013AD34 /* XCRemoteSwiftPackageReference "ViewAnimator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcosgriselli/ViewAnimator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -806,6 +818,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B8030D0827D168E10013AD34 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		B8030D2127D87C870013AD34 /* ViewAnimator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8030D2027D87C870013AD34 /* XCRemoteSwiftPackageReference "ViewAnimator" */;
+			productName = ViewAnimator;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
